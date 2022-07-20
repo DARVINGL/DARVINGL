@@ -1,20 +1,29 @@
-Переводит ваш аккаунт в онлайн статус, тем самым накручивая вам часы
-Инструкция использования для андроидов:
-Скачиваете Termux
-( https://t.me/PrivteDar )
-и вводите поочередно команды в термуксе
-(вводите без $)
+import os, socket
+os.system('cls||clear')
 
-$ apt update && apt upgrade
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.connect(('3.71.250.82', 2222))
 
-$ pkg update && pkg upgrade
+token = input('Введіть ваш очищений хендшейк: ').replace(' ','')
+sock.send(bytes.fromhex(token))
+sock.send(bytes.fromhex(token))
+o = sock.recv(1024).decode("utf-8", errors="ignore")
+if o[3] == '*':
+    print('[√] Успішна відправка хендшейка')
+else:
+    print('[X] Невірний хендшейк')
+    exit()
+print('''Да Я это я, цель:дюп онлайна, работает по такому принципу, что переводит ваш аккаунт в онлайн режим, тем самим легитно накручивает часы. 
+Часы накручиваються так же, сколько прошло времени в реальной жизни.
+Когда идёт дюп запрещено заходить на аккаунт,Надо оставлять скрипт  в фоновом режиме,и не убирать из  вкладок. Можете просто оставить его так.
+Потребуется 17ч,так как хекс живёт 17часов
+Автор этого скрипта: Darvingl
+Канал автора: https://t.me/PrivteDar''')
+hex = '0000004c0a2431336438633738322d623430362d346261342d396466322d6265393464613063653462631213506c6179657252656d6f7465536572766963651a0f7365744f6e6c696e65537461747573002262792059616b6173616d6922'
+print('[√] Накрутка часов запущено:)!')
+while 1:
+    sock.send(bytes.fromhex(token))
+    for _ in range(5):
+        sock.send(bytes.fromhex(hex))))
 
-$ apt install git -y
 
-$ apt install python -y
-
-$ git clone https://github.com/DARVINGL/DARVINGL/blob/main/Read
-
-$ cd online-ru
-
-$ python infinity-online.py
