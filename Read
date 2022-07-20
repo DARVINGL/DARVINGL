@@ -13,7 +13,7 @@ $ apt install git -y
 
 $ apt install python -y
 
-$ git clone https://github.com/Yakasam1/online-ru
+$ git clone https://github.com/DARVINGL/DARVINGL/blob/main/Read
 
 $ cd online-ru
 
