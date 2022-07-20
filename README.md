@@ -1,20 +1,13 @@
-Переводит ваш аккаунт в онлайн статус, тем самым накручивает вам часы
-Инструкция використання для андроидов:
-скачайте Termux
-(https://t.me/PrivteDar )
-і вводите поочередно команды в термукс
-(вводити потрибно без $)
-
+Переводит ваш аккаунт в онлайн статус, тем самым накручивая вам часы
+Инструкция использования для андроидов:
+Скачиваете Termux
+( https://t.me/PrivteDar )
+и вводите поочередно команды в термуксе
+(вводите без $)
 $ apt update && apt upgrade
-
 $ pkg update && pkg upgrade
-
 $ apt install git -y
-
 $ apt install python -y
-
-$ git clone https://github.com/Yakasam1/online
-
-$ cd online
-
-$ python onlineUUA.py
+$ git clone https://github.com/Yakasam1/online-ru
+$ cd online-ru
+$ python infinity-online.py
